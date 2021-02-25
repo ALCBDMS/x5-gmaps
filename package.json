@@ -1,15 +1,15 @@
 {
-  "name": "x5-gmaps",
+  "name": "x5-gmaps-modified",
   "version": "0.3.32",
   "private": false,
-  "description": "A lightweight Google Maps plugin for Vue",
+  "description": "A lightweight Google Maps plugin for Vue used for JCU Discharge Project",
   "author": "Keagan Chisnall",
   "scripts": {
     "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build --mode production",
+    "build": "webpack --mode production",
     "deploy": "rimraf dist && webpack && npm publish"
   },
-  "main": "dist",
+  "main": "dist/index.js",
   "files": [
     "dist"
   ],
@@ -46,8 +46,5 @@
     "google"
   ],
   "license": "MIT",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/xon52/x5-gmaps.git"
-  }
+  "repository": "https://github.com/ALCBDMS/x5-gmaps.git"
 }
