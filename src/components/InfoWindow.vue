@@ -30,7 +30,6 @@ export default {
     gmaps()
       .then((GMaps) => (this.infoW = new GMaps.InfoWindow({ content: this.$el, ...this.options })))
       .then(() => this.infoW.addListener('closeclick', () => this.$emit('closed')))
-      .then(() => this.open())
       .catch((e) => this.handleError(e))
   },
   beforeDestroy() {
