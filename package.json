@@ -9,7 +9,7 @@
     "build": "webpack --mode production",
     "deploy": "rimraf dist && webpack && npm publish"
   },
-  "main": "dist/index.js",
+  "main": "dist",
   "files": [
     "dist"
   ],
